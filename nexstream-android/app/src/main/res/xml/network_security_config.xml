@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Permite conexiones a cualquier dominio incluyendo HTTP plano y puertos custom
+    (necesario para streams IPTV que usan puertos como :8443, :8080, :1935, etc.)
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
